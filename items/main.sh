@@ -24,7 +24,6 @@ static_content() {
         0.0 M V "Split view        -->" split_view.sh \
         2.0 M M "Missing Keys      -->" missing_keys.sh \
         0.0 M A "Advanced Options  -->" advanced.sh \
-        0.0 M E "Extras            -->" extras.sh \
         0.0 S \
         0.0 C l "toggle status Line" "set status" \
         0.0 E p "Plugins inventory" "$D_TM_SCRIPTS/plugins.sh" \
