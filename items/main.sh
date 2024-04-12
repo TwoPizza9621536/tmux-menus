@@ -58,8 +58,6 @@ static_content() {
     #  shellcheck disable=SC2154
     set -- "$@" \
         0.0 S \
-        0.0 E r 'Reload configuration file' reload_conf.sh \
-        0.0 S \
         0.0 C d '<P> Detach from tmux' detach-client \
         0.0 S \
         0.0 M H 'Help -->' "$D_TM_ITEMS/help.sh $current_script"
