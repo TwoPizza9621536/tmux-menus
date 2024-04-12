@@ -29,7 +29,7 @@ D_TM_BASE_PATH="$(dirname "$(cd -- "$(dirname -- "$0")" && pwd)")"
 _this="reload_conf.sh"
 [ "$(basename "$0")" != "$_this" ] && error_msg "$_this should NOT be sourced"
 
-conf_file="$(get_tmux_option "@menus_config_file" "$HOME/tmux.conf")"
+conf_file="$(get_tmux_option "@menus_config_file" "$XDG_CONFIG_HOME/tmux/tmux.conf")"
 conf="${TMUX_CONF:-$conf_file}"
 
 $TMUX_BIN command-prompt -I "$conf" -p "Source file:" \
